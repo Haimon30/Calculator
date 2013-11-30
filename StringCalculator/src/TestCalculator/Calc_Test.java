@@ -60,5 +60,12 @@ public class Calc_Test {
 		
 		assertEquals(21, result);
 	}
-
-}
+	
+	@Test
+	public void NegValue()
+	{
+		Str_Calculator cal = new Str_Calculator();
+		int result = cal.Add("1,2,-3,-4,5");
+		assertEquals(-1, result);
+	}
+} 
