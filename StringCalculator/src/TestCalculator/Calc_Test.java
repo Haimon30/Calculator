@@ -33,7 +33,7 @@ public class Calc_Test {
 		
 		assertEquals(3, result);
 	}
-	
+
 	@Test
 	public void AddUnknownNumbers()
 	{

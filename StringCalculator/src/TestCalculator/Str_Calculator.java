@@ -18,7 +18,7 @@ public class Str_Calculator
 			return num1;
 		}
 		
-		tmp = numbers.split(",");
+		tmp = numbers.split("[,\n]+");
 		if(tmp.length == 2)
 		{
 			num1 = Integer.parseInt(tmp[0]);
@@ -29,12 +29,11 @@ public class Str_Calculator
 				num2 = 0;
 			return num1 + num2;
 		}
-		if(tmp.length == 9)
-		{	
-			for(int i=0; i < tmp.length; i++)
-				result += Integer.parseInt(tmp[i]);
-			return result;
-		}
-		return 55;
+		
+		for(int i=0; i < tmp.length; i++)
+			result += Integer.parseInt(tmp[i]);
+		
+		return result;
+
 	}
 }
