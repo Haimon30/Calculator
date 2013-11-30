@@ -23,5 +23,14 @@ public class Calc_Test {
 		
 		assertEquals(1, result);
 	}
+	
+	@Test
+	public void AddTwoValues()
+	{
+		Str_Calculator cal = new Str_Calculator();
+		int result = cal.Add("1,2");
+		
+		assertEquals(3, result);
+	}
 
 }
