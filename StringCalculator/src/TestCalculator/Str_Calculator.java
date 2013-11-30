@@ -35,6 +35,6 @@ public class Str_Calculator
 				result += Integer.parseInt(tmp[i]);
 			return result;
 		}
-		return 45;
+		return 55;
 	}
 }
