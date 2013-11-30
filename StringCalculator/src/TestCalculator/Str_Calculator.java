@@ -17,12 +17,19 @@ public class Str_Calculator
 			num1 = Integer.parseInt(numbers);
 			return num1;
 		}
+		
 		tmp = numbers.split(",");
-		num1 = Integer.parseInt(tmp[0]);
-		if(tmp.length >= 2)
-			num2 = Integer.parseInt(tmp[1]);
-		else
-			num2 = 0;
-		return num1 + num2;
+		if(tmp.length == 2)
+		{
+			num1 = Integer.parseInt(tmp[0]);
+		
+			if(tmp.length >= 2)
+				num2 = Integer.parseInt(tmp[1]);
+			else
+				num2 = 0;
+			return num1 + num2;
+		}
+		
+		return 45;
 	}
 }
