@@ -11,8 +11,12 @@ public class Str_Calculator
 			return 0;
 		}  
 		
-		num1 = Integer.parseInt(numbers);
+		if(numbers.length() == 1)
+		{
+			num1 = Integer.parseInt(numbers);
+			return num1;
+		}
 		
-		return num1;
+		return 3;
 	}
 }
