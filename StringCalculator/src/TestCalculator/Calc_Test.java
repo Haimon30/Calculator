@@ -42,5 +42,14 @@ public class Calc_Test {
 		
 		assertEquals(45, result);	
 	}
+	
+	@Test
+	public void NewLineHandle()
+	{
+		Str_Calculator cal = new Str_Calculator();
+		int result = cal.Add("1\n2,3\n4,5,6\n7,8\n9,10");
+		
+		assertEquals(45, result);	
+	}
 
 }
