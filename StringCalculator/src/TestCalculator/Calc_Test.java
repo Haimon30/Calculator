@@ -3,6 +3,7 @@ package TestCalculator;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+import org.omg.CORBA.PUBLIC_MEMBER;
 
 public class Calc_Test {
 
@@ -31,6 +32,15 @@ public class Calc_Test {
 		int result = cal.Add("1,2");
 		
 		assertEquals(3, result);
+	}
+	
+	@Test
+	public void AddUnknownNumbers()
+	{
+		Str_Calculator cal = new Str_Calculator();
+		int result = cal.Add("1,2,3,4,5,6,7,8,9");
+		
+		assertEquals(45, result);	
 	}
 
 }
