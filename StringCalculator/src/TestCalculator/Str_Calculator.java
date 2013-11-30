@@ -4,6 +4,6 @@ public class Str_Calculator
 {
 	public int Add(String numbers) 
 	{
-		return -1;
+		return 0;
 	}
 }
