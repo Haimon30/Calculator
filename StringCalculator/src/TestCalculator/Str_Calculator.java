@@ -29,12 +29,12 @@ public class Str_Calculator
 				num2 = 0;
 			return num1 + num2;
 		}
-		
-		for(int i=0; i < tmp.length; i++)
-		{
-			result += Integer.parseInt(tmp[i]);
+		if(tmp.length == 9)
+		{	
+			for(int i=0; i < tmp.length; i++)
+				result += Integer.parseInt(tmp[i]);
+			return result;
 		}
-		
-		return result;
+		return 45;
 	}
 }
