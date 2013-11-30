@@ -4,7 +4,7 @@ public class Str_Calculator
 {
 	public int Add(String numbers) 
 	{
-		int num1, num2;
+		int num1, num2, result=0;
 		String[] tmp;
 		
 		if(numbers.length() == 0)
@@ -30,6 +30,11 @@ public class Str_Calculator
 			return num1 + num2;
 		}
 		
-		return 45;
+		for(int i=0; i < tmp.length; i++)
+		{
+			result += Integer.parseInt(tmp[i]);
+		}
+		
+		return result;
 	}
 }
