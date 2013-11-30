@@ -51,5 +51,14 @@ public class Calc_Test {
 		
 		assertEquals(55, result);	
 	}
+	
+	@Test
+	public void AnyDelimitersHandling()
+	{
+		Str_Calculator cal = new Str_Calculator();
+		int result = cal.Add(";1 2,3\n4,5,6");
+		
+		assertEquals(21, result);
+	}
 
 }

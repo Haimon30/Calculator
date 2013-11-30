@@ -18,7 +18,7 @@ public class Str_Calculator
 			return num1;
 		}
 		
-		tmp = numbers.split("[,\n]+");
+		tmp = numbers.split("[, \n]+");
 		if(tmp.length == 2)
 		{
 			num1 = Integer.parseInt(tmp[0]);
