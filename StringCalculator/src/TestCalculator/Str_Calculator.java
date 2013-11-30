@@ -11,6 +11,8 @@ public class Str_Calculator
 			return 0;
 		}  
 		
-		return 1;
+		num1 = Integer.parseInt(numbers);
+		
+		return num1;
 	}
 }
