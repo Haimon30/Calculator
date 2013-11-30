@@ -4,6 +4,13 @@ public class Str_Calculator
 {
 	public int Add(String numbers) 
 	{
-		return 0;  
+		int num1, num2;
+		
+		if(numbers.length() == 0)
+		{
+			return 0;
+		}  
+		
+		return -1;
 	}
 }
