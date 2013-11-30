@@ -11,6 +11,6 @@ public class Str_Calculator
 			return 0;
 		}  
 		
-		return -1;
+		return 1;
 	}
 }
